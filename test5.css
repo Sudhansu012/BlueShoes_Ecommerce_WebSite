@@ -1,0 +1,275 @@
+.main{
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(232, 230, 227);
+    color: black;
+    box-sizing:border-box;
+}
+  .main{
+/*       margin: 20px; */
+/*       padding: 10px; */
+      /* background-color: red; */
+    width: 100%;
+      background-color:rgb(237,237,237);
+      /* height: 50em; */
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      
+  }
+.cart, .check{
+  margin: 20px;
+/*   padding: 10px; */
+/*   background-color:rgb(237,237,237); */
+  
+}
+.c-header{
+  padding: 10px;
+}
+.cart{
+  flex: 70%;
+  background: rgba(246, 240, 229, 0.871);
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+  border-radius: 5px;
+}
+
+.c-product{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+.c-product #quan{
+    text-align: center;
+    font-weight: bold;
+
+}
+.c-product .add .neg{
+    color: white;
+    background-color: #333;
+    width: 20px;
+}
+
+.c-product .add .neg:hover{
+    font-weight: bold;
+    background-color: black;;
+}
+
+/* empty cart */
+.epol{
+  width: 100%;
+}
+.emptyCart{
+  font-size: 80px;
+  margin: 50px auto 50px auto;
+}
+.emptyCartbtn{
+  width: 100px;
+  padding: 5px 10px;
+  max-height: 50px;
+  font-size: 25px;
+  background-color: #333;
+  color: white;
+  transition: 0.5s ;
+}
+.emptyCartbtn:hover{
+  width: 350px;
+  background-color: black;
+  color: white;
+}
+.emptyCartbtn span{
+  display: none;
+  transition: 0.5s;
+}
+/* .emptyCartbtn:hover + .emptyCartbtn span{
+  display: block;
+  width: 100%;
+} */
+
+
+.show{
+  flex: 20%;
+  width: 100%;
+  height: auto;
+  background-color: rgba(246, 240, 229, 0.871);
+}
+.show img{
+  object-fit: fill;
+  width: 100%;
+  height: 250px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+}
+.stuff{
+  flex: 60%;
+  margin-left: 20px;
+}
+.stuff .s-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.stuff .s-color{
+    margin-top: 15px;
+    font-size: 17px;
+}
+.stuff .s-size{
+    font-size: 17px;
+    margin-top: 5px;
+}
+.stuff .s-arch{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.stuff .meribold{
+    font-weight: bold;
+}
+.stuff .s-delete a{
+    font-size: 30px;
+    color: rgb(128, 124, 124);
+}
+.s-delete a:hover{
+    color: black;
+    font-weight: bold;
+}
+.price{
+  flex: 20%;
+}
+.price .new{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.pr{
+  text-decoration-line: line-through;
+}
+
+/* checkout button */
+.checkout{
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  background-color: rgb(237,237,237);
+  position: sticky;
+  bottom: 0;
+  margin-top: 50px;
+}
+.checkout .pbtn{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+.checkout .pbtn:hover{
+    background-color: black;
+    font-weight: bold;
+}
+
+
+
+.check{
+  flex: 30%;
+  background: rgba(246, 240, 229, 0.871);
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+  border-radius: 5px;
+  margin-left: 20px;
+  height: 460px;
+  position: sticky;
+  top: 0;
+
+}
+.check-header{
+    font-size: 30px;
+    margin: 20px 0px 30px 10px;
+}
+.subtotal{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  margin-left: 20px;
+
+}
+
+.subtotal .prc, #prc2{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 17px;
+  margin-bottom: 20px;
+
+}
+
+
+/* for coupon part - display none */
+#lab2, #prc2{
+    display: none;
+}
+.hide {
+    display: none;
+  }
+#lab2 i:hover{
+    color: red;
+}
+
+#lab2:hover + .hide {
+    display: block;
+    color: red;
+  }
+
+.weout{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 20px;
+  margin: 17px 0px 17px 20;
+  font-weight: bold;
+}
+.weout .prc{
+  text-align: right;
+  font-size: 25px;
+  margin: 15px 20px 15px 0px;
+}
+.weout .lab1{
+    font-size: 25px;
+    margin: 15px 0px 15px 0px;
+}
+.clearfix{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.couptext{
+  float: right;
+  width: 250px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.coupname{
+  margin-right: 10px;
+}
+.coupname .coupbtn{
+  width: 70px;
+  color: white;
+  background-color: rgb(49, 49, 49);
+  margin-top: 10px;
+  height: 30px;
+
+}
+.coupname .coupbtn:hover{
+  background-color: black;
+  font-weight: bold;
+}

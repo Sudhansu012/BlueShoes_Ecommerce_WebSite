@@ -1,0 +1,32 @@
+  /* Footer part */
+  .footer-final{
+
+
+    /* background-color: red; */
+    background-color:black;
+    /* height: 50em; */
+    height: auto;
+    /* padding-top: 30px;
+    padding-bottom: 20px; */
+    padding: 30px 0px 20px 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    width: 100%;
+}
+ .footer-heading{
+    margin-bottom: 20px;
+}
+ .dropdown-content{
+    list-style-type: none;
+}
+ .dropdown-items{
+    margin-top: 10px;
+}
+ .dropdown-items a{
+    color: rgb(41, 41, 174);
+}
+ .dropdown-items a:hover{
+    color: blue;
+}
+  

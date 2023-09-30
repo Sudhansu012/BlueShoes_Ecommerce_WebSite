@@ -1,0 +1,39 @@
+.mainDD{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 70px;
+    margin-bottom: 70px;
+    
+}
+.button{
+    display: grid;
+    grid-template-columns: 250px 150px;
+    column-gap: auto;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 100px;
+
+}
+
+.button button{
+    width: 80px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    transition: 0.5s;
+}
+.button button:hover{
+    /* background-color: black; */
+    width: 270px;
+    font-weight: bold;
+}
+
+#browse2, #browse3{
+    display:none;
+    transition: 0.5s;
+}

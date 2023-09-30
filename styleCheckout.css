@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding:25px;
+  min-height: 700px;
+  /*2ecc71, 27ae60 */
+  background: linear-gradient(90deg, rgb(124, 124, 124) 40%, #333 40.1%);
+}
+
+.container .checkoutbill{
+  flex: 60%;
+  padding:20px;
+  width:100%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.container .bill{
+  flex: 40%;
+}
+
+.container .checkoutbill .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container .checkoutbill .row .col{
+  flex:1 1 250px;
+}
+
+.container .checkoutbill .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+
+}
+
+.container .checkoutbill .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container .checkoutbill .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container .checkoutbill .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container .checkoutbill .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container .checkoutbill .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container .checkoutbill .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container .checkoutbill .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container .checkoutbill .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #333;
+  color:#fff;
+  margin-top: 25px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.container .checkoutbill .submit-btn:hover{
+  background: black;
+  font-weight: bold;
+}
+
+/* Price display part */
+.check{
+  flex: 30%;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+
+  margin-left: 20px;
+  height: 430px;
+  position: sticky;
+  top: 0;
+
+}
+.check-header{
+    font-size: 30px;
+    margin: 20px 10px 30px 10px;
+    border-bottom: 3px solid black;
+}
+.subtotal{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  /* margin-left: 20px; */
+  margin: 0px 10px 0px 10px;
+  border-bottom: 3px solid black;
+
+}
+
+.subtotal .prc, .subtotal #prc2{
+  text-align: right;
+  margin-right: 10px;
+  font-size: 17px;
+  margin-bottom: 20px;
+
+}
+.subtotal #lab2, .subtotal .lab1{
+  margin-left: 10px;
+}
+
+/* for coupon part - display none */
+
+#lab2, #prc2{
+    display: none;
+    
+}
+.hide {
+    display: none;
+  }
+#lab2 i:hover{
+    color: red;
+}
+
+#lab2:hover + .hide {
+    display: block;
+    color: red;
+  }
+
+  .weout{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 10px;
+    margin: 18px 0px 18px 20;
+    margin-right: 10px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+  }
+  .weout .prc{
+    text-align: right;
+    font-size: 25px;
+    margin: 15px 10px 15px 0px;
+  }
+  .weout .lab1{
+      font-size: 25px;
+      margin: 15px 0px 15px 10px;
+  }
+  .check .gotocart{
+    color: white;
+    background-color: #333;
+    margin: 50px 0px 0px 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .check .gotocart:hover{
+    background-color: black;
+    font-weight: bold;
+  }
+
+.clearfix{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.couptext{
+  float: right;
+  width: 250px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.coupname{
+  margin-right: 10px;
+}
+.coupname .coupbtn{
+  width: 70px;
+  color: white;
+  background-color: rgb(49, 49, 49);
+  margin-top: 10px;
+  height: 30px;
+
+}
+.coupname .coupbtn:hover{
+  background-color: black;
+  font-weight: bold;
+}
